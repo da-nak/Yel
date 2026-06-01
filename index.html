@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern single-page academic web application explaining the social media landscape, advantages, disadvantages, and responsible use."
+    />
+    <title>The Social Media Landscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed glass navigation with author credit and theme controls. -->
+    <header class="site-header">
+      <nav class="navbar glass-panel" aria-label="Main navigation">
+        <a class="brand" href="#hero" aria-label="The Social Media Landscape home">
+          <span class="brand-mark" aria-hidden="true">#</span>
+          <span>Social Media</span>
+        </a>
+
+        <p class="author-label">Designed and Submitted by: Yeleul Temesgen</p>
+
+        <div class="nav-actions">
+          <a href="#pros" data-i18n="navPros">Pros</a>
+          <a href="#cons" data-i18n="navCons">Cons</a>
+          <a href="#conclusion" data-i18n="navConclusion">Conclusion</a>
+
+          <label class="language-control" for="language-select">
+            <span data-i18n="languageLabel">Language</span>
+            <select id="language-select" aria-label="Choose language">
+              <option value="en">English</option>
+              <option value="am">አማርኛ</option>
+            </select>
+          </label>
+
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <span class="toggle-track" aria-hidden="true">
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="toggle-text" data-i18n="themeLight">Light</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero: full-screen introduction with animated gradient background. -->
+      <section class="hero-section" id="hero" aria-labelledby="hero-title">
+        <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-content glass-panel reveal">
+          <p class="section-kicker" data-i18n="heroKicker">Digital connection in modern life</p>
+          <h1 id="hero-title" data-i18n="heroTitle">The Social Media Landscape</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Social media is a digital platform that allows people to communicate,
+            share information, create content, and connect with others around the
+            world through the internet. Popular social media platforms include
+            Facebook, Instagram, TikTok, X, and YouTube. People use social media
+            for communication, entertainment, education, business, and news sharing.
+          </p>
+          <a class="primary-link" href="#pros" data-i18n="heroButton">Explore the impact</a>
+        </div>
+      </section>
+
+      <!-- Advantages: responsive CSS Grid of interactive glass cards. -->
+      <section class="content-section pros-section" id="pros" aria-labelledby="pros-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker" data-i18n="prosKicker">The Advantages</p>
+          <h2 id="pros-title" data-i18n="prosTitle">Positive Uses of Social Media</h2>
+        </div>
+
+        <div class="pros-grid">
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3 data-i18n="proOneTitle">Stay connected</h3>
+            <p data-i18n="proOneCopy">Social media helps people remain close to family, friends, classmates, and communities.</p>
+          </article>
+
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3 data-i18n="proTwoTitle">Fast communication</h3>
+            <p data-i18n="proTwoCopy">Messages, posts, and video calls allow information to travel quickly across distances.</p>
+          </article>
+
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3 data-i18n="proThreeTitle">Educational opportunities</h3>
+            <p data-i18n="proThreeCopy">Students and teachers can access tutorials, discussions, learning groups, and academic content.</p>
+          </article>
+
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">04</span>
+            <h3 data-i18n="proFourTitle">Business promotion</h3>
+            <p data-i18n="proFourCopy">Companies and small businesses can advertise products, build brands, and reach customers.</p>
+          </article>
+
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">05</span>
+            <h3 data-i18n="proFiveTitle">Sharing creativity</h3>
+            <p data-i18n="proFiveCopy">Creators can publish videos, designs, writing, music, and other original ideas with global audiences.</p>
+          </article>
+
+          <article class="pro-card glass-panel reveal">
+            <span class="card-icon" aria-hidden="true">06</span>
+            <h3 data-i18n="proSixTitle">Quick access to global news</h3>
+            <p data-i18n="proSixCopy">People can follow current events and learn about important stories from around the world.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Disadvantages: accessible accordion with cautionary visual styling. -->
+      <section class="content-section cons-section" id="cons" aria-labelledby="cons-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker" data-i18n="consKicker">The Disadvantages</p>
+          <h2 id="cons-title" data-i18n="consTitle">Risks That Require Responsible Use</h2>
+        </div>
+
+        <div class="accordion glass-panel reveal">
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conOneTitle">Addiction and wasted time</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conOneCopy">Excessive scrolling can distract users from studying, working, resting, and real responsibilities.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conTwoTitle">False information/fake news</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conTwoCopy">Unverified posts can spread quickly and influence people before accurate facts are checked.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conThreeTitle">Cyberbullying</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conThreeCopy">Harmful messages, public insults, and online harassment can damage confidence and safety.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conFourTitle">Privacy risks</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conFourCopy">Personal photos, locations, and private details can be misused when shared without care.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conFiveTitle">Mental health/sleep impacts</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conFiveCopy">Comparison, pressure, late-night use, and constant notifications can affect mood and sleep quality.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span data-i18n="conSixTitle">Reduced face-to-face interaction</span>
+              <span class="accordion-symbol" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p data-i18n="conSixCopy">Online communication can sometimes replace meaningful in-person conversations and relationships.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Conclusion: centered summary block to close the page. -->
+      <section
+        class="content-section conclusion-section"
+        id="conclusion"
+        aria-labelledby="conclusion-title"
+      >
+        <div class="conclusion-card glass-panel reveal">
+          <p class="section-kicker" data-i18n="conclusionKicker">Conclusion</p>
+          <h2 id="conclusion-title" data-i18n="conclusionTitle">Use Social Media Wisely</h2>
+          <p data-i18n="conclusionCopy">
+            Social media has become an important part of modern life. It offers
+            many benefits in communication, education, and entertainment, but it
+            also has negative effects if not used responsibly. Therefore, people
+            should use social media wisely and maintain a healthy balance between
+            online and real-life activities.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner glass-panel">
+        <p>Designed and Submitted by: Yeleul Temesgen</p>
+        <a href="#hero" data-i18n="backToTop">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
